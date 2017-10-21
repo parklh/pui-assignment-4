@@ -1,0 +1,420 @@
+/*Common, macro level tags styled here*/
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	font-weight: 500;
+	margin-bottom:0;
+}
+
+h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+p {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height:20px;
+}
+
+/*Unique text style*/
+.largetext {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*Establised link styles*/
+a.one {
+	font-family: 'Roboto Slab';
+	font-size: 18px;
+	font-weight: 300;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.one:hover, a.one:active {
+	font-weight: 500;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.two {
+	font-family: 'Roboto Slab';
+	font-size: 14px;
+	font-weight: 300;
+	color: #000;
+	text-decoration: none;
+}
+
+a.two:hover, a.two:active {
+	font-weight: 500;
+	color: #000;
+	text-decoration: none;
+}
+
+/*Homepage + navigation styles*/
+.logo {
+	max-width: 100px;
+	height: auto;
+}
+
+#hero {
+	background-image: url("images/bg.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 0 auto;
+	width: 1140px;
+	margin: 0 auto;
+	min-height: calc(100vh - 50px);
+}
+
+.cartContainer {
+	flex: 1 0 auto;
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	margin-top: 30px;
+	width: 100%;
+}
+
+.navigation {
+	list-style: none;
+	display: inline-flex;
+	margin: 13px 0 0 0;
+	padding: 0;
+	width:497px;
+	justify-content: space-between;
+
+}
+
+.navigation a.one {
+	list-style-type: none;
+	font-size:16px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.navigation a.one:hover {
+	font-weight:500;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.navigation a.two {
+	list-style-type: none;
+	font-size:16px;
+	color: #000;
+	text-decoration: none;
+}
+
+.navigation a.two:hover {
+	font-weight:500;
+	color: #000;
+	text-decoration: none;
+}
+
+#cart {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin-right: 10px;
+}
+
+.cartwhite {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin-right: 10px;
+	color: #FFF;
+}
+
+/*Site flourishes*/
+.border {
+	height: 10px;
+	border-bottom:1px solid white;
+	margin: 15px 30px 0 30px;
+	width: 500px;
+}
+
+.border.black {
+	border-bottom:1px solid black;
+}
+
+.headline {
+	margin:0;
+	width:484px;
+}
+
+/*More unique styles*/
+.lead {
+	font-family: 'Montserrat';
+	font-size: 70px;
+	line-height:72px;
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.subtitle {
+	font-family: 'Roboto Slab';
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: lowercase;
+
+}
+
+/*Style the menu page*/
+.menu {
+	margin-top:60px;
+	width:566px;
+}
+
+.products {
+	list-style: none;
+	width: 1140px;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 60px 0 0 0;
+}
+
+.image {
+	width: 360px;
+	height: 360px;
+	position: relative;
+	margin: 0 30px 30px 0;
+}
+
+.image.right {
+	margin-right:0;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: white;
+}
+
+.image:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	font-family: 'Roboto Slab', serif;
+	font-weight:400;
+	font-size: 14px;
+	color:black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.thumbnail {
+	width: 360px;
+	height: 360px;
+	object-fit: cover;
+}
+
+.overview {
+	margin-top: 60px;
+	display: flex;
+}
+
+.preview {
+	width:652px;
+	height:652px;
+	object-fit: cover;
+}
+
+/*Product page styles*/
+.description {
+	width:457px;
+	margin-left: 30px;
+}
+
+.price {
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.border.long {
+	margin: 60px 0 60px 0;
+	width: 1140px;
+	border-bottom:1px solid black;
+
+}
+
+.border.short {
+	margin:	30px 0 30px 0;
+	width: 457px;
+	border-bottom:1px solid black;
+}
+
+/*button styles*/
+.primary {
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	color: black;
+	border: none;
+	background-color: white;
+}
+
+.secondary {
+	background-color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	color: white;
+	width: 165px;
+	height: 38px;
+	border:none;
+	float: right;
+}
+
+.secondary:hover {
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+}
+/*Additional styles for js fuctions*/
+#close {
+	background: url("images/close.png") no-repeat;
+	width: 15px;
+	height:18px;
+	border: none;
+}
+
+#dropdown {
+	border: 1px solid #000;
+	background: transparent;
+  	-webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+	font-family: 'Roboto Slab', serif;
+	background: url("images/down-chevron.png") no-repeat 96% 0;
+	font-size: 14px;
+	height: 38px;
+	width: 215px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.type {
+	margin: 10px;
+}
+
+tr {
+	height: 30px;
+}
+
+td {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 14px;
+	width: 230px;
+}
+
+/*Cart styling*/
+#cart{
+	margin-top: 60px;
+}
+
+#yourOrder {
+	margin-top: 60px;
+}
+
+.cartCheckout {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	padding-bottom:30px;
+}
+
+.inBasket{
+	margin-top: -42px;
+	margin-left: 30px;
+}
+
+.flavorChoice {
+	margin: 0;
+	float: left;
+}
+
+.orderPrice {
+	margin:0;
+	float: right;
+}
+
+#checkoutNow {
+	margin: 0 auto;
+	float: left;
+}
+
+#checkoutButton {
+	margin: 0 auto;
+	float: right;
+}
+
+
+.footer {
+	font-family: 'Roboto Slab', serif;
+	font-size:12px;
+	line-height:50px;
+	font-weight:300;
+	height: 50px;
+	width: 100%;
+	margin:0;
+	background-color: #FFF;
+	text-align: center;
+	vertical-align: middle;
+}
+/*Flexbox displau*/
+@media all and (min-width: 800px) {
+  .header    { order: 1; }
+  .headline  { order: 2; } 
+  .menu      { order: 3; }
+  .cart 	 { order: 4; }
+  .products  { order: 5; }
+  .overview  { order: 6; }
+  .border-long   { order: 7; }
+  .more      { order: 8; }
+  .footer    { order: 9; }
+}

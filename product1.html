@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto+Slab:300,400,500" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+
+		<title>bun bun bake shop</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="index.html"><img class="logo" src="images/bblogo-black.svg"></a>
+				<div class="border black">
+				</div>
+				<ul class="navigation">
+					<li><a class="two" href="index.html">home</a></li>
+					<li><a class="two" href="menu.html">menu</a></li>
+					<li><a class="two" href="#">about</a></li>
+					<li><a class="two" href="#">contact</a></li>
+					<li><span id="cart">0</span><a class="two" href="cart.html"><img src="images/basket-black.png"></a></li>
+				</ul>	
+			</div>
+			<!--Product information begins here-->
+			<div class="overview">
+				
+				<div class="product-image">
+					<img id="main" src="images/product1-1.jpeg" class="preview">
+				</div>
+				
+				<div class="description">
+					<h1 id="pageFlavor" data-flavor="Original Bun">Original Bun</h1>
+					<p class=largetext>Nothing beats the original. Our classic recipe, the one that started it all. Warm dough, our locally sourced cinnamon, topped with our housemade rich cream cheese frosting.</p>
+						<!--Hidden, appears with javascript event-->
+						<div id="moreDescription" style="display:none">
+						<p class=largetext>Sweet, you're ordering a multi-pack! Mix it up and add two more flavors!</p>	
+						</div>				
+					<H3>Quantity</H3>
+					<!--Quantity options available for order-->
+					<select id="dropdown" onchange="dropdownChange()"">
+						<option value="">Please select</option>
+						<option value="Single">Single</option>
+						<option value="6-pack, Single">6-pack, Single</option>
+						<option value="6-pack">6-pack</option>
+						<option value="12-pack, Single">12-pack, Single</option>
+						<option value="12-pack">12-pack</option>
+					</select>
+					<!--If user chooses multi-pack, they can select more flavors-->
+					<div id="flavors" style="display:none">
+						<table>
+							<tr>
+								<td><input class="type" type="checkbox" name="flavor" value="Original Bun (Gluten Free)">Original Bun (Gluten Free)</td>
+								<td><input class="type" type="checkbox" name="flavor" value="Original Bun (Vegan)">Original Bun (Vegan)</td>
+							</tr>
+							<tr>
+								<td><input class="type" type="checkbox" name="flavor" value="Maple Apple Pecan">Maple Apple Pecan</td>
+								<td><input class="type" type="checkbox" name="flavor" value="Bacon">Bacon</td>
+							</tr>
+							<tr>
+								<td><input class="type" type="checkbox" name="flavor" value="Walnut">Walnut</td>
+								<td><input class="type" type="checkbox" name="flavor" value="Pumpkin Spice">Pumpkin Spice</td>
+							</tr>
+							<tr>
+								<td><input class="type" type="checkbox" name="flavor" value="Caramel Pecan">Caramel Pecan</td>
+								<td><input class="type" type="checkbox" name="flavor" value="Carrot Cake">Carrot Cake</td>
+							</tr>
+							<tr>
+								<td><input class="type" type="checkbox" name="flavor" value="Old Fashion Buttermilk">Old Fashion Buttermilk</td>
+								<td><input class="type" type="checkbox" name="flavor" value="Strawberry Rhubarb">Strawberry Rhubarb</td>
+							</tr>
+							<tr>
+								<td><input class="type" type="checkbox" name="flavor" value="Birthday Cake">Birthday Cake</td>
+								<td><input class="type" type="checkbox" name="flavor" value="Lemon Lavendar">Lemon Lavender</td>
+							</tr>
+							<tr>
+								<td><input class="type" type="checkbox" name="flavor" value="Cranberry">Cranberry</td>
+								<td><input class="type" type="checkbox" name="flavor" value="Blackberry">Blackberry</td>
+							</tr>
+						</table>
+					</div>
+					<div class="border short"></div>
+					<!--Dynamic price and CTA-->
+					<span id="price" class="price">$0.00</span>
+					<button id="add" type="button" class="secondary" onclick="addCart()">add to cart</button>
+				</div>
+			</div>	
+			<!--Recommendations to the user-->	
+			<div class="more">
+				<div class="border long">
+				</div>
+				<H2><center>MORE BUNS TO LOVE</center></H2>
+				<ul class=products>
+					<div class="image">
+						<li><img class="thumbnail" src="images/product13.jpg"></li>
+						<a href="#"><div class="overlay">
+							<div class="text">Lemon Lavendar</div>
+						</div></a>
+					</div>
+					<div class="image">
+						<li><img class="thumbnail" src="images/product9.jpg"></li>
+						<a href="#"><div class="overlay">
+							<div class="text">Carrot Cake</div>
+						</div></a>
+					</div>
+					<div class="image right">
+						<li><img class="thumbnail" src="images/product4.jpg"></li>
+						<a href="#"><div class="overlay">
+							<div class="text">Maple Apple Pecan</div>
+						</div></a>
+					</div>	
+				</ul>
+				</div>
+			</div>
+
+		<div class="footer">
+		© 2017 Bun Bun Bake Shop
+		</div>
+		<!--Javascript loads at end-->
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto+Slab:300,400,500" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+
+		<title>bun bun bake shop</title>
+	</head>
+	
+	<body>
+		<div class="cartContainer">
+			<div class="header">
+				<a href="index.html"><img  class="logo" src="images/bblogo-black.svg"></a>
+				<div class="border black">
+				</div>
+				<ul class="navigation">
+					<li><a class="two" href="index.html">home</a></li>
+					<li><a class="two" href="menu.html">menu</a></li>
+					<li><a class="two" href="#">about</a></li>
+					<li><a class="two" href="#">contact</a></li>
+					<li><span id="cart">0</span><a class="two" href="#"><img src="images/basket-black.png"></a></li>
+				</ul>	
+			</div>
+			<div id="cart">
+				<h2>CHECKOUT</h2>
+				<h1>Your basket</h1>
+				<!-- Order array populates in this div -->
+				<div id="yourOrder"></div>
+				<div class="cartCheckout"><p id="checkoutNow">Your order is looking mighty tasty.</p>
+				<button id="checkoutButton" type="button" class="secondary">checkout</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		© 2017 Bun Bun Bake Shop
+		</div>
+		<script src="main.js"></script>
+	</body>
+	<script type="text/javascript">updateCart(), checkout()</script>
+</html>
